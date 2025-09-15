@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Rica Sikhwebu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* ========== General Reset ========== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* ========== Navigation Bar ========== */
+    header {
+      background: #12343b;
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      color: #e1b382;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font-size: 1rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background: #c89666;
+      color: #12343b;
+    }
+
+    /* ========== Skills Container ========== */
+    .skills-container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #12343b;
+    }
+
+    /* ========== Skill Sections with Unique Colors ========== */
+    .skill-category {
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+
+    /* Section Colors */
+    .web-dev-section { background: #2d545e; }
+    .networking-section { background: #12343b; }
+    .ai-ml-section { background: #2d545e; }
+    .soft-skills-section { background: #12343b; }
+
+    .skill-category h3 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ========== Skill Bars ========== */
+    .skill {
+      margin-bottom: 20px;
+    }
+
+    .skill-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .progress-bar {
+      background: #e9ecef;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 12px;
+      margin-top: 5px;
+    }
+
+    /* Different gradients for each skill category */
+    .web-dev { background: linear-gradient(to right, #0d6efd, #66b2ff); }
+    .networking { background: linear-gradient(to right, #28a745, #6ddf6d); }
+    .ai-ml { background: linear-gradient(to right, #0d6efd, #66b2ff); }
+    .soft-skills { background: linear-gradient(to right, #28a745, #6ddf6d); }
+    /* Footer */
+    footer {
+      background: #12343b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .skills-container {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fas fa-gem"></i> Rica Booi
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="projects.html" class="nav-item"><i class="fas fa-tasks"></i> Projects</a></li>
+      <li><a href="skills.html" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Script to auto-highlight active page -->
+<script>
+  // Get the current page file name
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+  <!-- Skills Section -->
+  <section class="skills-container">
+    <h2>Skills Developed Throughout My Projects</h2>
+
+    <!-- Web Development -->
+    <div class="skill-category web-dev-section">
+      <h3><i class="fas fa-laptop-code"></i> Web Development & Front-End Design</h3>
+      <div class="skill">
+        <div class="skill-title">
+          <span>HTML5 & CSS3</span><span>90%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress web-dev" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Responsive Design</span><span>85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress web-dev" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Git & GitHub Collaboration</span><span>80%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress web-dev" style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Networking & Server Administration -->
+    <div class="skill-category networking-section">
+      <h3><i class="fas fa-network-wired"></i> Networking & Server Administration</h3>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Apache Web Server Configuration (Linux/Windows)</span><span>88%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress networking" style="width: 88%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Windows Server Management</span><span>95%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress networking" style="width: 95%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Networking Fundamentals (TCP/IP, DNS, DHCP)</span><span>90%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress networking" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Linux Administration</span><span>82%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress networking" style="width: 82%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI & Data Analytics -->
+    <div class="skill-category ai-ml-section">
+      <h3><i class="fas fa-robot"></i> Artificial Intelligence, Data, and Cloud Computing</h3>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Python for Data Analysis</span><span>70%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress ai-ml" style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Machine Learning Basics</span><span>75%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress ai-ml" style="width: 75%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Cloud Infrastructure (AWS & Azure)</span><span>85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress ai-ml" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Cybersecurity Fundamentals</span><span>88%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress ai-ml" style="width: 88%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skill-category soft-skills-section">
+      <h3><i class="fas fa-users"></i> Professional & Soft Skills</h3>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Project Management (Agile, Waterfall)</span><span>85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress soft-skills" style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Problem Solving & Critical Thinking</span><span>90%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress soft-skills" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Technical Documentation</span><span>88%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress soft-skills" style="width: 88%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">
+          <span>Communication & Collaboration</span><span>92%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress soft-skills" style="width: 92%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rica Sikhwebu | Designed with ❤️ and ambition
+  </footer>
+
+</body>
+</html>

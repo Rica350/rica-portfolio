@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Rica Sikhwebu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #2d545e; /* Night Blue */
+      color: #fff;
+    }
+
+    /* ===== Navigation Bar ===== */
+    header {
+      background: #12343b; /* Night Blue Shadow */
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #e1b382; /* Sand Tan */
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font-size: 1rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background: #c89666; /* Sand Tan Shadow */
+      color: #12343b;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      gap: 40px;
+      background: #2d545e; /* Night Blue */
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #e1b382; /* Sand Tan */
+    }
+
+    .hero-text h1 span {
+      color: #c89666; /* Sand Tan Shadow */
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #f4f4f4;
+    }
+
+    .hero .btn {
+      text-decoration: none;
+      background: #c89666; /* Sand Tan Shadow */
+      color: #12343b;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background: #e1b382; /* Sand Tan */
+      color: #12343b;
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #e1b382;
+      object-fit: cover;
+    }
+
+    /* ===== Featured Projects ===== */
+    .featured-projects {
+      background: #e1b382; /* Sand Tan */
+      padding: 50px 20px;
+      border-radius: 12px;
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    .featured-projects h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #12343b;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #12343b;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #2d545e; /* Night Blue */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #e1b382; /* Sand Tan */
+    }
+
+    .project-card p {
+      color: #f4f4f4;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .project-card .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #c89666; /* Sand Tan Shadow */
+      color: #12343b;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .project-card .btn:hover {
+      background: #e1b382;
+      color: #12343b;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #12343b; /* Night Blue Shadow */
+      color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fas fa-gem"></i> Rica Booi
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="projects.html" class="nav-item"><i class="fas fa-tasks"></i> Projects</a></li>
+      <li><a href="skills.html" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Script to auto-highlight active page -->
+<script>
+  // Get the current page file name
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Rica Sikhwebu</span></h1>
+      <p>Aspiring AI & Network Specialist | Building Secure, Intelligent Solutions</p>
+      <a href="projects.html" class="btn">Explore My Projects</a>
+    </div>
+    <img src="images/profile.jpg" alt="Rica Sikhwebu">
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <p class="section-subtitle">Here are some of my most impactful bootcamp assignments and personal projects.</p>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>AI Bias Audit</h3>
+        <p>A machine learning project that analyzes hiring data to detect and mitigate gender bias using ethical AI principles.</p>
+        <a href="https://github.com/Rica350/Ai_bias_Audit" class="btn">View GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>View-All Content Aggregation App</h3>
+        <p>A content aggregator that integrates multiple streaming services into a single platform with search and recommendation features.</p>
+        <a href="https://github.com/Rica350/viewall" class="btn">View GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Smart City Waste Management Solution</h3>
+        <p>IoT, AI, and Cloud-based smart city solution designed to improve waste management efficiency in Johannesburg.</p>
+        <a href="https://github.com/Rica350/smartcity" class="btn">View GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Apache Web Server Configuration</h3>
+        <p>Setup and secured a multi-site Apache web server, including SSL configuration, rsync backups, and optimization for speed and security.</p>
+        <a href="https://github.com/Rica350/apache-server-config" class="btn">View GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Web Server Security & Maintenance</h3>
+        <p>Implemented hardening, auditing, and monitoring features on a Fedora Linux web server to ensure fault tolerance and redundancy.</p>
+        <a href="https://github.com/Rica350/webserver-security" class="btn">View GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Online Ordering System Design</h3>
+        <p>Designed an online ordering system as a Business Analyst and Project Manager, including use-case diagrams and risk assessment.</p>
+        <a href="https://github.com/Rica350/online-ordering-system" class="btn">View GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Capstone Showcase Portfolio</h3>
+        <p>A comprehensive portfolio showcasing my bootcamp journey, technical skills, and capstone project presentation.</p>
+        <a href="https://github.com/Rica350/capstone-portfolio" class="btn">View GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>AI/ML Career Preparation Portfolio</h3>
+        <p>Career-ready portfolio website, resume, LinkedIn optimization, and job strategy focused on AI/ML and Network Engineering.</p>
+        <a href="https://github.com/Rica350/career-prep" class="btn">View GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rica Sikhwebu | Designed with ❤️ and ambition
+  </footer>
+
+</body>
+</html>

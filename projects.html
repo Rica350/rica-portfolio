@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Rica Sikhwebu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* ===== Navigation Bar ===== */
+    header {
+      background: #12343b; /* Night Blue Shadow */
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #e1b382; /* Sand Tan */
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font-size: 1rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background: #c89666; /* Sand Tan Shadow */
+      color: #12343b;
+    }
+
+    /* ===== Page Header ===== */
+    .page-header {
+      text-align: center;
+      padding: 50px 20px;
+      background: #2d545e; /* Night Blue */
+      color: #e1b382; /* Sand Tan */
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    /* ===== Projects Section ===== */
+    .projects-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #e1b382; /* Sand Tan */
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-icon {
+      font-size: 2.5rem;
+      color: #12343b; /* Night Blue Shadow */
+      margin-bottom: 15px;
+    }
+
+    .project-card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #12343b;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin: 10px 0 15px;
+      color: #333;
+    }
+
+    .project-card a {
+      display: inline-block;
+      text-decoration: none;
+      background: #12343b; /* Night Blue Shadow */
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .project-card a:hover {
+      background: #c89666; /* Sand Tan Shadow */
+      color: #12343b;
+    }
+
+    footer {
+      background: #12343b;
+      color: #f4f4f4;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .projects-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <i class="fas fa-gem"></i> Rica Sikhwebu
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="projects.html" class="active"><i class="fas fa-tasks"></i> Projects</a></li>
+        <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    My Projects & Assignments
+  </div>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+
+    <div class="project-card">
+      <i class="fas fa-robot project-icon"></i>
+      <h3>AI Bias Audit</h3>
+      <p>Analyzed hiring datasets to identify and mitigate gender bias using ethical AI practices and fairness metrics.</p>
+      <a href="https://github.com/rica-booi/ai-bias-audit" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <i class="fas fa-comments project-icon"></i>
+      <h3>Sentiment Analysis Project</h3>
+      <p>Developed a Natural Language Processing (NLP) model to analyze user feedback and determine sentiment trends for business insights.</p>
+      <a href="https://github.com/Capaciti-Tech-Team/Sentimate-Analysis-System" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <i class="fas fa-bicycle project-icon"></i>
+      <h3>Alert Rider Project</h3>
+      <p>Created a smart delivery system that alerts riders about package locations, improving logistics efficiency using IoT and real-time tracking.</p>
+      <a href="https://github.com/Capaciti-Tech-Team/Alert_Rider_App" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <i class="fas fa-server project-icon"></i>
+      <h3>Apache Web Server Deployment</h3>
+      <p>Configured and secured multi-site hosting using Apache Web Server, SSL encryption, and disaster recovery plans.</p>
+      <a href="#">Configuration Guide</a>
+    </div>
+
+    <div class="project-card">
+      <i class="fas fa-shopping-cart project-icon"></i>
+      <h3>Online Ordering System Design</h3>
+      <p>Designed use-case diagrams and risk assessments for an online food ordering system as a Business Analyst.</p>
+      <a href="#">Documentation</a>
+    </div>
+
+    <div class="project-card">
+      <i class="fas fa-briefcase project-icon"></i>
+      <h3>Capstone Showcase Portfolio</h3>
+      <p>Created a professional portfolio showcasing my bootcamp journey, technical skills, and live demonstrations.</p>
+      <a href="#">View Portfolio</a>
+    </div>
+
+    <div class="project-card">
+      <i class="fas fa-laptop-code project-icon"></i>
+      <h3>Network Security Research</h3>
+      <p>Investigated network optimization techniques and cybersecurity practices to improve business IT infrastructure.</p>
+      <a href="#">Research Paper</a>
+    </div>
+
+    <div class="project-card">
+      <i class="fas fa-globe project-icon"></i>
+      <h3>Multi-site Web Hosting Solution</h3>
+      <p>Deployed multiple websites on a single Apache server, focusing on performance, security, and scalability.</p>
+      <a href="#">Deployment Steps</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rica Sikhwebu | Designed with ❤️ and ambition
+  </footer>
+
+</body>
+</html>

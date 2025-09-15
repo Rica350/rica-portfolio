@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Rica Sikhwebu Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    /* ===== Navigation Bar ===== */
+    header {
+      background: #12343b; /* Night Blue Shadow */
+      padding: 1rem 2rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #e1b382; /* Sand Tan */
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #f4f4f4;
+      font-size: 1rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      background: #c89666; /* Sand Tan Shadow */
+      color: #12343b;
+    }
+
+    /* ===== Page Header ===== */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #2d545e; /* Night Blue */
+      color: #e1b382; /* Sand Tan */
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    /* ===== Contact Section ===== */
+    .contact-section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      background: #e1b382; /* Sand Tan */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info, .contact-form {
+      padding: 20px;
+      background: #12343b; /* Night Blue Shadow */
+      border-radius: 12px;
+      color: #fff;
+    }
+
+    .contact-info h2, .contact-form h2 {
+      color: #c89666; /* Sand Tan Shadow */
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .contact-item i {
+      font-size: 1.3rem;
+      margin-right: 15px;
+      color: #c89666; /* Sand Tan Shadow */
+    }
+
+    .contact-info a {
+      color: #e1b382; /* Sand Tan */
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Contact Form ===== */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 140px;
+    }
+
+    .contact-form button {
+      background: #c89666; /* Sand Tan Shadow */
+      color: #12343b;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #e1b382; /* Sand Tan */
+    }
+
+    footer {
+      background: #12343b; /* Night Blue Shadow */
+      color: #f4f4f4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fas fa-gem"></i> Rica Booi
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="projects.html" class="nav-item"><i class="fas fa-tasks"></i> Projects</a></li>
+      <li><a href="skills.html" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Script to auto-highlight active page -->
+<script>
+  // Get the current page file name
+  const currentPage = window.location.pathname.split("/").pop();
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+
+  <!-- Page Header -->
+  <div class="page-header">
+    Contact Me
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>If you’d like to collaborate, have questions about my work, or are interested in hiring me, feel free to reach out using the details below or send me a message through the form.</p>
+
+      <div class="contact-item">
+        <i class="fas fa-user"></i>
+        <span><strong>Name:</strong> Rica Sikhwebu</span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span><strong>Email:</strong> <a href="mailto:nontathu80@gmail.com">nontathu80@gmail.com</a></span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span><strong>Phone:</strong> +27 69 388 9536</span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/Rica Sikhwebu" target="_blank">linkedin.com/in/Rica Sikhwebu</a></span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <span><strong>GitHub:</strong> <a href="https://github.com/Rica350" target="_blank">github.com/Rica350</a></span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span><strong>Location:</strong> Johannesburg, South Africa</span>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/xzzaqppl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Rica Sikhwebu | Designed with ❤️ and ambition
+  </footer>
+
+</body>
+</html>
