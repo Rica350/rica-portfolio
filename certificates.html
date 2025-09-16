@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certificates | Rica Sikhwebu Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Certificates & Badges | Rica Booi Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- Font Awesome for Icons -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    /* Background */
+    /* General Styling */
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -86,10 +86,10 @@
       margin-bottom: 40px;
     }
 
-    /* Grid Layout */
+    /* Certificate Grid Layout */
     .certificate-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
     }
 
@@ -138,6 +138,50 @@
       color: #12343b;
     }
 
+    /* ===== Badges Section ===== */
+    .badges-section {
+      margin-top: 60px;
+    }
+
+    .badges-section h2 {
+      color: #e1b382;
+      margin-bottom: 20px;
+    }
+
+    .badge-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      background: #f9f9f9;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      width: 150px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .badge:hover {
+      transform: scale(1.05);
+      border-color: #007bff;
+    }
+
+    .badge img {
+      max-width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .badge-title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #444;
+    }
+
     /* ===== Footer ===== */
     footer {
       background: #12343b;
@@ -160,7 +204,7 @@
         <li><a href="about.html" class="nav-item"><i class="fas fa-user"></i> About</a></li>
         <li><a href="projects.html" class="nav-item"><i class="fas fa-tasks"></i> Projects</a></li>
         <li><a href="skills.html" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
-        <li><a href="certificates.html" class="nav-item active"><i class="fas fa-certificate"></i> Certificates</a></li>
+        <li><a href="certificates.html" class="nav-item active"><i class="fas fa-award"></i> Certificates</a></li>
         <li><a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
@@ -174,30 +218,74 @@
     <div class="certificate-grid">
       <!-- Certificate 1 -->
       <div class="certificate-card">
-        <img src="images/certificates/ccna-preview.jpg" alt="CCNA Certificate">
-        <h3>CCNA Networking Certification</h3>
-        <a href="certificates/ccna.pdf" target="_blank"><i class="fas fa-eye"></i> View / Download</a>
+        <img src="images/ai.jpg" alt="AI-For-Everyone Certificate">
+        <h3>AI-For-Everyone Certificate</h3>
+        <a href="documents/AI For Everyone.pdf" target="_blank"><i class="fas fa-eye"></i> View / Download</a>
       </div>
 
       <!-- Certificate 2 -->
       <div class="certificate-card">
-        <img src="images/certificates/linux-preview.jpg" alt="Linux Certificate">
-        <h3>Linux Server Administration</h3>
-        <a href="certificates/linux.pdf" target="_blank"><i class="fas fa-eye"></i> View / Download</a>
+        <img src="images/gpt.jpg" alt="AI Foundations Prompt Certificate">
+        <h3>AI Foundations Prompt Certificate</h3>
+        <a href="documents/AI Foundations Prompt Engineering with ChatGPT Cert.pdf" target="_blank"><i class="fas fa-eye"></i> View / Download</a>
       </div>
 
       <!-- Certificate 3 -->
       <div class="certificate-card">
-        <img src="images/certificates/ai-preview.jpg" alt="AI Bootcamp Certificate">
-        <h3>AI Bootcamp</h3>
-        <a href="certificates/AI For Everyone.pdf" target="_blank"><i class="fas fa-eye"></i> View / Download</a>
+        <img src="images/certificates/ai-preview.jpg" alt="Artificial Intelligence on Microsoft Certificate">
+        <h3>Artificial Intelligence on Microsoft Azure Certificate</h3>
+        <a href="documents/Artificial Intelligence on Microsoft Azure Cert.pdf" target="_blank"><i class="fas fa-eye"></i> View / Download</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Badges Section -->
+  <section class="badges-section">
+    <h2>My Badges</h2>
+
+    <!-- Section 1 -->
+    <h3>Developer Skills</h3>
+    <div class="badge-section">
+      <div class="badge">
+        <img src="images/P3.png" alt="Python for Data Scienece and AI Badge">
+        <div class="badge-title">Python for Data Scienece and AI</div>
+      </div>
+      <div class="badge">
+        <img src="images/ai badge.png" alt="Python for Data Scienece and AI Badge">
+        <div class="badge-title">Python for Data Scienece and AI</div>
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <h3>IBM & DevOps</h3>
+    <div class="badge-section">
+      <div class="badge">
+        <img src="images/P1.jpg" alt="IBM & DevOps Badge">
+        <div class="badge-title">IBM Badge</div>
+      </div>
+      <div class="badge">
+        <img src="images/IDM badge.png" alt="IBM Badg">
+        <div class="badge-title">Artificial Intelligence Essentials</div>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <h3>Other Badges</h3>
+    <div class="badge-section">
+      <div class="badge">
+        <img src="images/P1.jpg" alt="Excellence Badge">
+        <div class="badge-title">IBM Excellence</div>
+      </div>
+      <div class="badge">
+        <img src="images/bot badge.png" alt="IBM Chatbot Building Badge">
+        <div class="badge-title">Chatbot Building</div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Rica Sikhwebu | Designed with ❤️ and ambition
+    &copy; 2025 Rica Booi | Designed with ❤️ and ambition
   </footer>
 </body>
 </html>
